@@ -3,12 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  background-image: url("assets/engin-akyurt-X8YN3aOJ18I-unsplash.jpg");
-
+.ask-section,
+.add-section,
+.about {
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.ask-section {
+  background-image: url("assets/chinigraphy-v0r5ORz2B-o-unsplash.jpg");
+}
+
+.add-section {
+  background-image: url("assets/chinigraphy-vcMrh6I4Nok-unsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+.about {
+  background-image: url("assets/chinigraphy-729Y5P6fmfg-unsplash.jpg");
 }
