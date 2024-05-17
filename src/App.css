@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Sedgwick+Ave+Display&display=swap");
-
-/* Rubik Burned, Sedgwick Ave Display */
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+/* Rubik Burned, Sedgwick Ave Display, Poetsen One
+ */
 
 * {
   margin: 0;
@@ -28,8 +29,22 @@
 
 .ask-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 10vh;
+}
+
+.current-question {
+  font-size: 1.4em;
+  /* text-shadow: 2px 2px 2px #000; */
+  font-family: "Poetsen One", serif;
+  margin-top: 4vh;
+  border: 2px solid rgb(75, 79, 69);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 60vw;
+  text-align: center;
 }
 
 .main-navigation {
@@ -41,7 +56,7 @@
 .link {
   border: 2px solid black;
   color: black;
-  font-size: 1.4em;
+  font-size: 1.1em;
   border-radius: 10px;
   padding: 10px;
   margin-left: 2vw;
@@ -64,4 +79,14 @@
 
 .draw-btn:hover {
   background-color: #fff;
+}
+/* ----------------------------- */
+
+@media (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
 }

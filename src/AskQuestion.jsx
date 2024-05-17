@@ -1,6 +1,11 @@
+import { useState } from "react";
+
 function AskQuestion() {
+  const [question, setNewQuestion] = useState("");
   function handleDrawQuestion() {
-    console.log("ook");
+    let newQuestion =
+      "Text shadow is a visual effect that adds shadows to text, enhancing its appearance and readability against various backgrounds in graphic design and web development. It typically involves specifying parameters such as the shadow's color, blur radius, and offsets along the x and y axes.";
+    setNewQuestion(newQuestion);
   }
 
   return (
@@ -8,6 +13,7 @@ function AskQuestion() {
       <button className="draw-btn" onClick={handleDrawQuestion}>
         Draw question
       </button>
+      {question && <div className="current-question">{question}</div>}
     </div>
   );
 }
